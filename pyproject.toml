@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "freeimagetovideo-haystack"
+version = "0.1.0"
+description = "Free image to video AI with no daily cap: start with no sign-up, keep going on a free account. Every video comes with sound and no watermark. Haystack component for Free Image to Video."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [{ name = "Free Image to Video", email = "support@freeimagetovideo.ai" }]
+keywords = ["haystack", "ai", "video-generation", "text-to-video", "image-to-video", "minimax-h3", "freeimagetovideo"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Topic :: Multimedia :: Video",
+  "License :: OSI Approved :: MIT License",
+]
+dependencies = ["haystack-ai>=2.0", "freeimagetovideo>=0.1.0"]
+
+[project.urls]
+Homepage = "https://freeimagetovideo.ai/?utm_source=pypi-haystack&utm_medium=package"
+"Image to Video" = "https://freeimagetovideo.ai/video/image-to-video-ai-with-sound"
+Documentation = "https://freeimagetovideo.readthedocs.io/en/latest/"
+Source = "https://github.com/hanshs474/fitv-haystack"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/freeimagetovideo_haystack"]
